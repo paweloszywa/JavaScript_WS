@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript exercises</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" type="text/javascript"></script>
+</head>
+<body>
+
+<p class="mainText">Drop-Down Menu → Hover on Tasks List</p>
+<div class="container">
+    <div class="nav">
+        <ul>
+            <li>Main Page</li>
+            <li>Tasks List
+                <ul>
+                    <li><a href="#slider">Slider</a></li>
+                    <li><a href="#filter">Filter</a></li>
+                    <li><a href="#tooltips">Tooltips</a></li>
+                    <li><a href="#todo">TODO List</a></li>
+                </ul>
+            </li>
+            <li>About</li>
+            <li>Another List
+                <ul>
+                    <li>Example 1</li>
+                    <li>Example 2</li>
+                    <li>Example 3</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<p class="mainText" id="slider">Slider with Fullscreen (click on photo)</p>
+<div class="container">
+    <div class="slider">
+        <ul>
+            <li><img src="images/1.jpg"></li>
+            <li><img src="images/2.jpg"></li>
+            <li><img src="images/3.jpg"></li>
+            <li><img src="images/4.jpg"></li>
+            <li><img src="images/5.jpg"></li>
+        </ul>
+        <button id="prevPicture"></button>
+        <button id="nextPicture"></button>
+    </div>
+</div>
+
+<p class="mainText" id="filter">Filter by tags → example: #cosmos, #evening, #bridge</p>
+<div class="search-tags">
+    <input id="tagInput" type="text" placeholder="Enter tag here">
+    <div class="button-show-hide">
+        <button id="showButton">Show</button>
+        <button id="hideButton">Hide</button>
+    </div>
+</div>
+
+<div class="container">
+    <div id="gallery">
+        <img data-tag="#cosmos" src="images/1.jpg">
+        <img data-tag="#evening" src="images/2.jpg">
+        <img data-tag="#bridge" src="images/3.jpg">
+        <img data-tag="#cosmos" src="images/4.jpg">
+    </div>
+</div>
+
+<p class="mainText" id="tooltips">Tooltips</p>
+<div class="container">
+    <div class="tooltips">
+        Lorem ipsum dolor sit amet enim.
+        <span class="tooltip" data-text="Lorem ipsum">Tooltip1</span>
+        Suspendisse a pellentesque dui, non felis.
+        <span class="tooltip" data-text="Lorem ipsum">Tooltip2</span>
+        felis, malesuada ultricies. Curabitur et ligula.
+    </div>
+</div>
+
+<p class="mainText" id="todo">TODO List (add some tasks)</p>
+<div class="container">
+    <div class="todo-list">
+        <p>Tasks to finish: <span id="counter"></span></p>
+        <input id="taskInput" type="text" placeholder="Place your task here">
+        <button id="addTaskButton">Add task</button>
+        <button id="removeFinishedTasksButton">Remove finished tasks</button>
+    </div>
+    <div class="todo">
+        <ul id="taskList"></ul>
+    </div>
+</div>
+</body>
+</html>
